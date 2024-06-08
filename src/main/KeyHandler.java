@@ -1,3 +1,5 @@
+package main;
+
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -52,5 +54,9 @@ public class KeyHandler implements KeyListener {
 
     } // keyReleased(.)
 
-} // KeyHandler
+    public boolean aKeyIsPressed() {
+        return (this.zPressed || this.sPressed || this.dPressed || this.qPressed);
+    } // aKeyIsPressed()
+
+} // main.KeyHandler
 

@@ -1,3 +1,5 @@
+package main;
+
 import javax.swing.*;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -21,4 +23,4 @@ public class Main {
         gamePanel.startGameClock();
 
     } // main(.)
-} // Main
+} // main.Main

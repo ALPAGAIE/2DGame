@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="Screen settings.">
-      <change afterPath="$PROJECT_DIR$/src/KeyHandler.java" afterDir="false" />
+    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="Game loop and keyHandler.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/down1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/down2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/left1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/left2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/right1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/right2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/up1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/player/up2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2DGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/2DGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,18 +65,25 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/player",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/src/Main.java",
+    "onboarding.tips.debug.path": "/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/src/Main.java",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/player" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -81,7 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1717801090580</updated>
       <workItem from="1717801091610" duration="1952000" />
-      <workItem from="1717803397482" duration="3091000" />
+      <workItem from="1717803397482" duration="3157000" />
+      <workItem from="1717837978232" duration="5224000" />
     </task>
     <task id="LOCAL-00001" summary="Screen settings.">
       <option name="closed" value="true" />
@@ -91,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717802813484</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Game loop and keyHandler.">
+      <option name="closed" value="true" />
+      <created>1717807232397</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717807232397</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +128,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Screen settings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Screen settings." />
+    <MESSAGE value="Game loop and keyHandler." />
+    <option name="LAST_COMMIT_MESSAGE" value="Game loop and keyHandler." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/res/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

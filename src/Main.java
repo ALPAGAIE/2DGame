@@ -18,5 +18,7 @@ public class Main {
         frame.setLocationRelativeTo(null); // open the frame at the center of the screen
         frame.setVisible(true);
 
+        gamePanel.startGameClock();
+
     } // main(.)
 } // Main

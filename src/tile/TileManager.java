@@ -21,7 +21,7 @@ public class TileManager {
         this.mapTimeNum = new int[gamePanel.maxScreenColumn][gamePanel.maxScreenRow];
 
         this.getTileImage();
-        this.loadMap("/maps/map01.txt");
+        this.loadMap("/maps/map1.txt");
     } // TileManager(.)
 
     public void getTileImage() {

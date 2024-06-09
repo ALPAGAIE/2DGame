@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="Map begin but not done">
+    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="Map complete">
+      <change afterPath="$PROJECT_DIR$/res/maps/bigMap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/maps/map1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/maps/map2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles/tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles/wall_hor_down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles/wall_hor_up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles/wall_vert_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/tiles/wall_vert_right.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/maps/map01.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,25 +54,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/player&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/maps",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/maps" />
+      <recent name="$PROJECT_DIR$/res/tiles" />
       <recent name="$PROJECT_DIR$/res/player" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -93,7 +102,9 @@
       <workItem from="1717803397482" duration="3157000" />
       <workItem from="1717837978232" duration="5756000" />
       <workItem from="1717873331028" duration="3507000" />
-      <workItem from="1717919559162" duration="701000" />
+      <workItem from="1717919559162" duration="961000" />
+      <workItem from="1717920729894" duration="46000" />
+      <workItem from="1717926979367" duration="1852000" />
     </task>
     <task id="LOCAL-00001" summary="Screen settings.">
       <option name="closed" value="true" />
@@ -127,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717877042957</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Map complete">
+      <option name="closed" value="true" />
+      <created>1717920278982</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717920278982</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +157,8 @@
     <MESSAGE value="Game loop and keyHandler." />
     <MESSAGE value="Player and player animation" />
     <MESSAGE value="Map begin but not done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Map begin but not done" />
+    <MESSAGE value="Map complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Map complete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

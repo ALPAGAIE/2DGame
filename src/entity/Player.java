@@ -12,16 +12,21 @@ public class Player extends Entity {
     GamePanel gamePanel;
     KeyHandler keyHandler;
 
+    public final int screenX;
+    public final int screenY;
+
     public Player(final GamePanel gamePanel, final KeyHandler keyHandler) {
         this.gamePanel = gamePanel;
         this.keyHandler = keyHandler;
+        this.screenX = (gamePanel.screenWidth/2) - (gamePanel.tileSize/2);
+        this.screenY = (gamePanel.screenHeight/2) + gamePanel.tileSize;
         this.setDefaultValues();
         this.getImage();
     } // Player(..)
 
     public void setDefaultValues() {
-        this.x = 100;
-        this.y = 100;
+        this.worldX = gamePanel.tileSize * 24;
+        this.worldY = gamePanel.tileSize * 24;
         this.speed = 5;
         this.direction = "down";
     } // setDefaultValues()
@@ -46,19 +51,19 @@ public class Player extends Entity {
         if(this.keyHandler.aKeyIsPressed()) {
             if(keyHandler.zPressed) {
                 this.direction = "up";
-                this.y -= this.speed;
+                this.worldY -= this.speed;
             } // if "z" is pressed
             if(keyHandler.sPressed) {
                 this.direction = "down";
-                this.y += this.speed;
+                this.worldY += this.speed;
             } // if "s" is pressed
             if(keyHandler.dPressed) {
                 this.direction = "right";
-                this.x += this.speed;
+                this.worldX += this.speed;
             } // if "d" is pressed
             if(keyHandler.qPressed) {
                 this.direction = "left";
-                this.x -= this.speed;
+                this.worldX -= this.speed;
             } // if "q" is pressed
 
             this.spriteCounter++;
@@ -111,7 +116,7 @@ public class Player extends Entity {
                 break;
         } // switch
 
-        g2.drawImage(image, this.x, this.y, gamePanel.tileSize, gamePanel.tileSize, null);
+        g2.drawImage(image, this.screenX, this.screenY, gamePanel.tileSize, gamePanel.tileSize, null);
 
     } // display()
 

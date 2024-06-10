@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="collision management" />
+    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="collision management">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/chest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/chest_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/house.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/objects/key.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/ObjChest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/ObjHouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/ObjKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/ObjectManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/object/SuperObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,27 +58,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/maps&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/objects",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/res/maps" />
+      <recent name="$PROJECT_DIR$/res/objects" />
       <recent name="$PROJECT_DIR$/res/tiles" />
+      <recent name="$PROJECT_DIR$/res/maps" />
       <recent name="$PROJECT_DIR$/res/player" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -74,8 +91,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
       </set>
     </attachedChunks>
   </component>
@@ -97,7 +114,10 @@
       <workItem from="1717938433474" duration="2964000" />
       <workItem from="1718015049383" duration="260000" />
       <workItem from="1718022212914" duration="205000" />
-      <workItem from="1718034915176" duration="3384000" />
+      <workItem from="1718034915176" duration="3671000" />
+      <workItem from="1718038902263" duration="225000" />
+      <workItem from="1718039399338" duration="38000" />
+      <workItem from="1718055237586" duration="1986000" />
     </task>
     <task id="LOCAL-00001" summary="Screen settings.">
       <option name="closed" value="true" />
@@ -163,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718038141186</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="collision management">
+      <option name="closed" value="true" />
+      <created>1718038824518</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718038824518</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

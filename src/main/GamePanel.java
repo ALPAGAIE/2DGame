@@ -1,6 +1,8 @@
 package main;
 
 import entity.Player;
+import object.ObjectManager;
+import object.SuperObject;
 import tile.TileManager;
 
 import javax.swing.*;
@@ -24,6 +26,8 @@ public class GamePanel extends JPanel implements Runnable {
     public Player player = new Player(this, this.keyHandler);
     public TileManager tileManager = new TileManager(this);
     public CollisionManager collisionManager = new CollisionManager(this);
+    public ObjectManager objectManager = new ObjectManager(this);
+    public SuperObject[] obj = new SuperObject[10];
 
     //FPS
     int FPS = 60;
@@ -50,6 +54,10 @@ public class GamePanel extends JPanel implements Runnable {
         clock.start();
 
     } // startGameClock()
+
+    public void setupObjects() {
+        this.objectManager.setObject();
+    } // setupObjects()
 
     @Override
     public void run() {
@@ -93,6 +101,13 @@ public class GamePanel extends JPanel implements Runnable {
         Graphics2D g2 = (Graphics2D) g;
 
         tileManager.display(g2);
+
+        for(SuperObject obj : this.obj) {
+            if(obj != null) {
+                obj.display(g2, this);
+            } // if
+        } // for each
+
         player.display(g2);
 
         g2.dispose();

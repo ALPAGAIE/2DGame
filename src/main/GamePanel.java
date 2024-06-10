@@ -22,7 +22,8 @@ public class GamePanel extends JPanel implements Runnable {
     KeyHandler keyHandler = new KeyHandler();
     Thread clock; // "clock"
     public Player player = new Player(this, this.keyHandler);
-    TileManager tileManager = new TileManager(this);
+    public TileManager tileManager = new TileManager(this);
+    public CollisionManager collisionManager = new CollisionManager(this);
 
     //FPS
     int FPS = 60;
@@ -41,7 +42,7 @@ public class GamePanel extends JPanel implements Runnable {
         this.addKeyListener(this.keyHandler);
         this.setFocusable(true); //
 
-    } // main.GamePanel()
+    } // GamePanel()
 
     public void startGameClock() {
 

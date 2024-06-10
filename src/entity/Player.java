@@ -18,6 +18,13 @@ public class Player extends Entity {
     public Player(final GamePanel gamePanel, final KeyHandler keyHandler) {
         this.gamePanel = gamePanel;
         this.keyHandler = keyHandler;
+
+        this.hitBox = new Rectangle();
+        this.hitBox.x = 20;
+        this.hitBox.y = 40;
+        this.hitBox.width = 32;
+        this.hitBox.height = 24;
+
         this.screenX = (gamePanel.screenWidth/2) - (gamePanel.tileSize/2);
         this.screenY = (gamePanel.screenHeight/2) + gamePanel.tileSize;
         this.setDefaultValues();
@@ -25,9 +32,9 @@ public class Player extends Entity {
     } // Player(..)
 
     public void setDefaultValues() {
-        this.worldX = gamePanel.tileSize * 24;
-        this.worldY = gamePanel.tileSize * 24;
-        this.speed = 5;
+        this.worldX = 100;
+        this.worldY = 100;
+        this.speed = 4;
         this.direction = "down";
     } // setDefaultValues()
 
@@ -49,28 +56,28 @@ public class Player extends Entity {
 
     public void update() {
         if(this.keyHandler.aKeyIsPressed()) {
-            if(keyHandler.zPressed) {
-                this.direction = "up";
-                this.worldY -= this.speed;
-            } // if "z" is pressed
-            if(keyHandler.sPressed) {
-                this.direction = "down";
-                this.worldY += this.speed;
-            } // if "s" is pressed
-            if(keyHandler.dPressed) {
-                this.direction = "right";
-                this.worldX += this.speed;
-            } // if "d" is pressed
-            if(keyHandler.qPressed) {
-                this.direction = "left";
-                this.worldX -= this.speed;
-            } // if "q" is pressed
+            if(keyHandler.zPressed) this.direction = "up"; // if "z" is pressed
+            if(keyHandler.sPressed) this.direction = "down"; // if "s" is pressed
+            if(keyHandler.dPressed) this.direction = "right"; // if "d" is pressed
+            if(keyHandler.qPressed) this.direction = "left"; // if "q" is pressed
+
+            //Checking if there's a collision with a tile
+            collisionOn = false;
+            gamePanel.collisionManager.checkTile(this);
+
+            //if there's no collision
+            if(!this.collisionOn) {
+                switch (direction) {
+                    case "up": this.worldY -= this.speed; break;
+                    case "down": this.worldY += this.speed; break;
+                    case "right": this.worldX += this.speed; break;
+                    case "left": this.worldX -= this.speed; break;
+                } // switch(.)
+            } // if
 
             this.spriteCounter++;
             if(this.spriteCounter > 10) { // manage the speed of the animation.
-                if(this.spriteNum == 1) {
-                    this.spriteNum = 2;
-                } // if 2nd
+                if(this.spriteNum == 1) this.spriteNum = 2; // if 2nd
                 else this.spriteNum = 1;
 
                 this.spriteCounter = 0;
@@ -83,36 +90,20 @@ public class Player extends Entity {
         BufferedImage image = null;
         switch (this.direction) {
             case "up":
-                if(this.spriteNum == 1) {
-                    image = up2;
-                } // if
-                else {
-                    image = up1;
-                } // else
+                if(this.spriteNum == 1) image = up2;
+                else image = up1;
                 break;
             case "down":
-                if(this.spriteNum == 1) {
-                    image = down2;
-                } // if
-                else {
-                    image = down1;
-                } // else
+                if(this.spriteNum == 1) image = down2;
+                else image = down1;
                 break;
             case "left":
-                if(this.spriteNum == 1) {
-                    image = left2;
-                } // if
-                else {
-                    image = left1;
-                } // else
+                if(this.spriteNum == 1)  image = left2;
+                else image = left1;
                 break;
             case "right":
-                if(this.spriteNum == 1) {
-                    image = right2;
-                } // if
-                else {
-                    image = right1;
-                } // else
+                if(this.spriteNum == 1) image = right2;
+                else image = right1;
                 break;
         } // switch
 

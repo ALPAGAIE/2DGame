@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="big map and camera finish">
-      <change afterPath="$PROJECT_DIR$/src/main/CollisionManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/tree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tile/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
-    </list>
+    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="collision management" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +97,7 @@
       <workItem from="1717938433474" duration="2964000" />
       <workItem from="1718015049383" duration="260000" />
       <workItem from="1718022212914" duration="205000" />
-      <workItem from="1718034915176" duration="2896000" />
+      <workItem from="1718034915176" duration="3384000" />
     </task>
     <task id="LOCAL-00001" summary="Screen settings.">
       <option name="closed" value="true" />
@@ -164,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717941784357</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="collision management">
+      <option name="closed" value="true" />
+      <created>1718038141186</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718038141186</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,7 +188,8 @@
     <MESSAGE value="Map complete" />
     <MESSAGE value="Big map began" />
     <MESSAGE value="big map and camera finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="big map and camera finish" />
+    <MESSAGE value="collision management" />
+    <option name="LAST_COMMIT_MESSAGE" value="collision management" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

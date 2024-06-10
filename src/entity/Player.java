@@ -23,7 +23,7 @@ public class Player extends Entity {
         this.hitBox.x = 20;
         this.hitBox.y = 40;
         this.hitBox.width = 32;
-        this.hitBox.height = 24;
+        this.hitBox.height = 16;
 
         this.screenX = (gamePanel.screenWidth/2) - (gamePanel.tileSize/2);
         this.screenY = (gamePanel.screenHeight/2) + gamePanel.tileSize;

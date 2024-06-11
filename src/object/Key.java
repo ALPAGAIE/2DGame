@@ -3,9 +3,9 @@ package object;
 import javax.imageio.ImageIO;
 import java.io.IOException;
 
-public class ObjKey extends SuperObject {
+public class Key extends Item {
 
-    public ObjKey() {
+    public Key() {
 
         this.name = "Key";
 

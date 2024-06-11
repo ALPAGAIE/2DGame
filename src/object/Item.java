@@ -4,9 +4,8 @@ import main.GamePanel;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.BufferedReader;
 
-public class SuperObject {
+public class Item {
 
     public BufferedImage image;
     public String name;

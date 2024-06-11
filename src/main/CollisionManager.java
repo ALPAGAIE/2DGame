@@ -1,11 +1,6 @@
 package main;
 
 import entity.Entity;
-import entity.Player;
-import object.SuperObject;
-
-import java.lang.foreign.PaddingLayout;
-import java.security.Key;
 
 public class CollisionManager {
 

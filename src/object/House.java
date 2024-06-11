@@ -3,9 +3,9 @@ package object;
 import javax.imageio.ImageIO;
 import java.io.IOException;
 
-public class ObjHouse extends SuperObject{
+public class House extends Item {
 
-    public ObjHouse() {
+    public House() {
 
         this.name = "House";
 

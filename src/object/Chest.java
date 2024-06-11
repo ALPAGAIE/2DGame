@@ -3,10 +3,10 @@ package object;
 import javax.imageio.ImageIO;
 import java.io.IOException;
 
-public class ObjChest extends SuperObject {
+public class Chest extends Item {
 
     private boolean isOpen = false;
-    public ObjChest() {
+    public Chest() {
 
         this.name = "Chest";
 

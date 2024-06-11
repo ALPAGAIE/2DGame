@@ -1,7 +1,7 @@
 package entity;
 import main.GamePanel;
 import main.KeyHandler;
-import object.SuperObject;
+import object.Item;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -13,7 +13,7 @@ public class Player extends Entity {
 
     GamePanel gamePanel;
     KeyHandler keyHandler;
-    public ArrayList<SuperObject> inventory;
+    public ArrayList<Item> inventory;
 
     public final int screenX;
     public final int screenY;
@@ -21,7 +21,7 @@ public class Player extends Entity {
     public Player(final GamePanel gamePanel, final KeyHandler keyHandler) {
         this.gamePanel = gamePanel;
         this.keyHandler = keyHandler;
-        this.inventory = new ArrayList<SuperObject>();
+        this.inventory = new ArrayList<Item>();
 
         this.hitBox = new Rectangle();
         this.hitBox.x = 20;
@@ -84,13 +84,6 @@ public class Player extends Entity {
                 } // switch(.)
             } // if
 
-            gamePanel.collisionManager.checkObject(this, true);
-
-            // if there's a collision
-            if(this.collisionOn) {
-                this.gamePanel.objectManager.interact(objIndex);
-            } // if
-
             this.spriteCounter++;
             if(this.spriteCounter > 10) { // manage the speed of the animation.
                 if(this.spriteNum == 1) this.spriteNum = 2; // if 2nd
@@ -98,7 +91,15 @@ public class Player extends Entity {
 
                 this.spriteCounter = 0;
             } // if 1st
-        } // if gen
+        } // if move
+
+        // if there's a collision
+        if(this.gamePanel.keyHandler.ePressed) {
+            int obj = this.gamePanel.collisionManager.checkObject(this, true);
+            if(this.collisionOn) {
+                this.gamePanel.itemManager.interact(obj);
+            } // if 2nd
+        } // if
 
     } // update()
 

@@ -10,7 +10,7 @@ public class Main {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
-        frame.setTitle("Tresure Founding");
+        frame.setTitle("Treasure Founding");
 
         GamePanel gamePanel = new GamePanel();
         frame.add(gamePanel);

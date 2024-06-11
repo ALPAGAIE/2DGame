@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="Setting objects on the map">
+    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="interacting objects and better tiles and objects setting up">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/CollisionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/ObjChest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ObjChest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/ObjHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ObjHouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/ObjKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ObjKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/ObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ObjectManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/SuperObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/ObjChest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Chest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/ObjHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/ObjKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Key.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/ObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ItemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,9 @@
       <workItem from="1718038902263" duration="225000" />
       <workItem from="1718039399338" duration="38000" />
       <workItem from="1718055237586" duration="2021000" />
-      <workItem from="1718094894560" duration="9401000" />
+      <workItem from="1718094894560" duration="9525000" />
+      <workItem from="1718119388883" duration="512000" />
+      <workItem from="1718126496675" duration="1102000" />
     </task>
     <task id="LOCAL-00001" summary="Screen settings.">
       <option name="closed" value="true" />
@@ -198,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718057344431</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="interacting objects and better tiles and objects setting up">
+      <option name="closed" value="true" />
+      <created>1718111104857</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718111104857</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +233,8 @@
     <MESSAGE value="big map and camera finish" />
     <MESSAGE value="collision management" />
     <MESSAGE value="Setting objects on the map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting objects on the map" />
+    <MESSAGE value="interacting objects and better tiles and objects setting up" />
+    <option name="LAST_COMMIT_MESSAGE" value="interacting objects and better tiles and objects setting up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

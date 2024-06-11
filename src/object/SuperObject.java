@@ -12,6 +12,8 @@ public class SuperObject {
     public String name;
     public boolean collision;
     public int worldX, worldY;
+    public Rectangle hitBox = new Rectangle();
+    public int hitBoxDefaultX, hitBoxDefaultY;
 
     public void display(final Graphics2D g2, final GamePanel gamePanel) {
 

@@ -1,6 +1,10 @@
 package object;
 
 import main.GamePanel;
+import tile.Tile;
+
+import javax.imageio.ImageIO;
+import java.io.IOException;
 
 public class ObjectManager {
     GamePanel gamePanel;
@@ -9,17 +13,48 @@ public class ObjectManager {
         this.gamePanel = gamePanel;
     } // ObjectManager(.)
 
-    public void setObject() {
+    public void getObjectImage() {
         gamePanel.obj[0] = new ObjKey();
-        gamePanel.obj[0].worldX = 9 * gamePanel.tileSize;
-        gamePanel.obj[0].worldY = 14 * gamePanel.tileSize;
+        this.setObject(0, 9, 14);
 
         gamePanel.obj[1] = new ObjHouse();
-        gamePanel.obj[1].worldX = 7 * gamePanel.tileSize;
-        gamePanel.obj[1].worldY = 26 * gamePanel.tileSize;
+        this.setObject(1, 7, 26);
 
         gamePanel.obj[2] = new ObjChest();
-        gamePanel.obj[2].worldX = 7 * gamePanel.tileSize;
-        gamePanel.obj[2].worldY = 28 * gamePanel.tileSize;
-    } // setObject()
+        this.setObject(2, 7, 28);
+
+    } // getObjectImage()
+
+    public void setObject(final int index, final int worldX, final int worldY) {
+        gamePanel.obj[index].worldX = worldX * gamePanel.tileSize;
+        gamePanel.obj[index].worldY = worldY * gamePanel.tileSize;
+    } // setObject(...)
+
+    public void interact(final int objIndex) {
+        if(objIndex == 11) {return;}
+
+        if(this.gamePanel.keyHandler.ePressed) {
+
+            SuperObject object = this.gamePanel.obj[objIndex];
+
+            switch(object.name) {
+                case "Key":
+                    this.gamePanel.player.inventory.add(object);
+                    this.gamePanel.obj[objIndex] = null;
+                    break;
+                case "House":
+                    break;
+                case "Chest":
+                    int keyCount = 0;
+                    for(SuperObject obj : this.gamePanel.player.inventory) {
+                        if(obj.name.equals("Key")) keyCount++;
+                    }
+                    if(keyCount > 0) {
+                        ((ObjChest) object).switchToOpenChest();
+                        keyCount--;
+                    } // if
+                    break;
+            } // switch
+        } // if "e" pressed
+    }
 } // ObjectManager

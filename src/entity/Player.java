@@ -1,16 +1,19 @@
 package entity;
 import main.GamePanel;
 import main.KeyHandler;
+import object.SuperObject;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Player extends Entity {
 
     GamePanel gamePanel;
     KeyHandler keyHandler;
+    public ArrayList<SuperObject> inventory;
 
     public final int screenX;
     public final int screenY;
@@ -18,12 +21,15 @@ public class Player extends Entity {
     public Player(final GamePanel gamePanel, final KeyHandler keyHandler) {
         this.gamePanel = gamePanel;
         this.keyHandler = keyHandler;
+        this.inventory = new ArrayList<SuperObject>();
 
         this.hitBox = new Rectangle();
         this.hitBox.x = 20;
         this.hitBox.y = 40;
         this.hitBox.width = 32;
         this.hitBox.height = 16;
+        this.hitBoxDefaultX = this.hitBox.x;
+        this.hitBoxDefaultY = this.hitBox.y;
 
         this.screenX = (gamePanel.screenWidth/2) - (gamePanel.tileSize/2);
         this.screenY = (gamePanel.screenHeight/2) + gamePanel.tileSize;
@@ -32,8 +38,8 @@ public class Player extends Entity {
     } // Player(..)
 
     public void setDefaultValues() {
-        this.worldX = 100;
-        this.worldY = 100;
+        this.worldX = 200;
+        this.worldY = 200;
         this.speed = 4;
         this.direction = "down";
     } // setDefaultValues()
@@ -65,6 +71,9 @@ public class Player extends Entity {
             collisionOn = false;
             gamePanel.collisionManager.checkTile(this);
 
+            //Checking if there's a collision with an object
+            int objIndex = gamePanel.collisionManager.checkObject(this, true);
+
             //if there's no collision
             if(!this.collisionOn) {
                 switch (direction) {
@@ -73,6 +82,13 @@ public class Player extends Entity {
                     case "right": this.worldX += this.speed; break;
                     case "left": this.worldX -= this.speed; break;
                 } // switch(.)
+            } // if
+
+            gamePanel.collisionManager.checkObject(this, true);
+
+            // if there's a collision
+            if(this.collisionOn) {
+                this.gamePanel.objectManager.interact(objIndex);
             } // if
 
             this.spriteCounter++;

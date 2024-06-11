@@ -21,7 +21,7 @@ public class GamePanel extends JPanel implements Runnable {
     public final int screenWidth = maxScreenColumn * tileSize;
     public final int screenHeight = maxScreenRow * tileSize;
 
-    KeyHandler keyHandler = new KeyHandler();
+    public KeyHandler keyHandler = new KeyHandler();
     Thread clock; // "clock"
     public Player player = new Player(this, this.keyHandler);
     public TileManager tileManager = new TileManager(this);
@@ -56,7 +56,7 @@ public class GamePanel extends JPanel implements Runnable {
     } // startGameClock()
 
     public void setupObjects() {
-        this.objectManager.setObject();
+        this.objectManager.getObjectImage();
     } // setupObjects()
 
     @Override

@@ -1,6 +1,11 @@
 package main;
 
 import entity.Entity;
+import entity.Player;
+import object.SuperObject;
+
+import java.lang.foreign.PaddingLayout;
+import java.security.Key;
 
 public class CollisionManager {
 
@@ -63,5 +68,59 @@ public class CollisionManager {
         } // switch
 
     } // checkTile(.)
+
+    public int checkObject(final Entity e, final boolean player) {
+
+        int index = 11;
+
+        for(int i = 0; i < gamePanel.obj.length; i++) {
+            if(gamePanel.obj[i] != null) {
+                e.hitBox.x += e.worldX;
+                e.hitBox.y += e.worldY;
+
+                gamePanel.obj[i].hitBox.x += gamePanel.obj[i].worldX;
+                gamePanel.obj[i].hitBox.y += gamePanel.obj[i].worldY;
+
+                switch (e.direction) {
+                    case "up":
+                        e.hitBox.y -= e.speed;
+                        if(e.hitBox.intersects(gamePanel.obj[i].hitBox)) {
+                            if(gamePanel.obj[i].collision) e.collisionOn = true;
+                            if(player) index = i;
+                        }
+                        break;
+                    case "down":
+                        e.hitBox.y += e.speed;
+                        if(e.hitBox.intersects(gamePanel.obj[i].hitBox)) {
+                            if(gamePanel.obj[i].collision) e.collisionOn = true;
+                            if(player) index = i;
+                        }
+                        break;
+                    case "right":
+                        e.hitBox.x += e.speed;
+                        if(e.hitBox.intersects(gamePanel.obj[i].hitBox)) {
+                            if(gamePanel.obj[i].collision) e.collisionOn = true;
+                            if(player) index = i;
+                        }
+                        break;
+                    case "left":
+                        e.hitBox.x -= e.speed;
+                        if(e.hitBox.intersects(gamePanel.obj[i].hitBox)) {
+                            if(gamePanel.obj[i].collision) e.collisionOn = true;
+                            if(player) index = i;
+                        }
+                        break;
+                } // switch
+
+                e.hitBox.x = e.hitBoxDefaultX;
+                e.hitBox.y = e.hitBoxDefaultY;
+                gamePanel.obj[i].hitBox.x = gamePanel.obj[i].hitBoxDefaultX;
+                gamePanel.obj[i].hitBox.y = gamePanel.obj[i].hitBoxDefaultY;
+
+            } // if
+        } // for each
+
+        return index;
+    } // checkObject(..)
 
 } // CollisionManager

@@ -15,5 +15,15 @@ public class ObjHouse extends SuperObject{
             e.printStackTrace();
         } // try/catch
 
+        this.hitBox.x = 0;
+        this.hitBox.y = 0;
+        this.hitBox.width = 64;
+        this.hitBox.height = 64;
+        this.hitBoxDefaultX = 0;
+        this.hitBoxDefaultY = 0;
+
+        this.collision = true;
+
     } // ObjHouse()
+
 } // ObjHouse

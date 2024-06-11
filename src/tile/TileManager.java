@@ -24,41 +24,31 @@ public class TileManager {
     } // TileManager(.)
 
     public void getTileImage() {
+
+        this.setTile(0, "wall_hor_up", true);
+        this.setTile(1, "wall_hor_down", true);
+        this.setTile(2, "wall_vert_right", true);
+        this.setTile(3, "path", false);
+        this.setTile(4, "grass", false);
+        this.setTile(5, "water", true);
+        this.setTile(6, "tree", true);
+        this.setTile(7, "wall_vert_left", true);
+
+    } // getTileImage()
+
+    public void setTile(final int index, final String name, final boolean collision) {
+
+        this.tile[index] = new Tile();
+
         try {
-            tile[0] = new Tile();
-            tile[0].image = ImageIO.read(getClass().getResourceAsStream("/tiles/wall_hor_up.png"));
-            tile[0].collision = true;
-
-            tile[1] = new Tile();
-            tile[1].image = ImageIO.read(getClass().getResourceAsStream("/tiles/wall_hor_down.png"));
-            tile[1].collision = true;
-
-            tile[2] = new Tile();
-            tile[2].image = ImageIO.read(getClass().getResourceAsStream("/tiles/wall_vert_right.png"));
-            tile[2].collision = true;
-
-            tile[3] = new Tile();
-            tile[3].image = ImageIO.read(getClass().getResourceAsStream("/tiles/path.png"));
-
-            tile[4] = new Tile();
-            tile[4].image = ImageIO.read(getClass().getResourceAsStream("/tiles/grass.png"));
-
-            tile[5] = new Tile();
-            tile[5].image = ImageIO.read(getClass().getResourceAsStream("/tiles/water.png"));
-            tile[5].collision = true;
-
-            tile[6] = new Tile();
-            tile[6].image = ImageIO.read(getClass().getResourceAsStream("/tiles/tree.png"));
-            tile[6].collision = true;
-
-            tile[7] = new Tile();
-            tile[7].image = ImageIO.read(getClass().getResourceAsStream("/tiles/wall_vert_left.png"));
-            tile[7].collision = true;
-
+            this.tile[index].image = ImageIO.read(getClass().getResourceAsStream("/tiles/" + name + ".png"));
         } catch (IOException e) {
             e.printStackTrace();
         } // try/catch
-    } // getTileImage()
+
+        this.tile[index].collision = collision;
+
+    } // setTile(...)
 
     public void loadMap(final String path) {
         try {

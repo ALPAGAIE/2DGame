@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="better coding in the item interacting management and refactoring of some classes">
-      <change afterPath="$PROJECT_DIR$/res/sounds/Select_001.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sounds/chest.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sounds/house.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sounds/keyTaken.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sounds/lilSound.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sounds/mainTheme.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sounds/tuto.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
+    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="adding music and soundEffects !">
+      <change afterPath="$PROJECT_DIR$/src/main/UserInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Chest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/object/ItemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ItemManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,7 +133,7 @@
       <workItem from="1718308780984" duration="69000" />
       <workItem from="1718719724820" duration="104000" />
       <workItem from="1719060147702" duration="132000" />
-      <workItem from="1719752993017" duration="3009000" />
+      <workItem from="1719752993017" duration="7318000" />
     </task>
     <task id="LOCAL-00001" summary="Screen settings.">
       <option name="closed" value="true" />
@@ -239,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718127730404</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="adding music and soundEffects !">
+      <option name="closed" value="true" />
+      <created>1719758132180</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719758132180</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +268,8 @@
     <MESSAGE value="Setting objects on the map" />
     <MESSAGE value="interacting objects and better tiles and objects setting up" />
     <MESSAGE value="better coding in the item interacting management and refactoring of some classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="better coding in the item interacting management and refactoring of some classes" />
+    <MESSAGE value="adding music and soundEffects !" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding music and soundEffects !" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

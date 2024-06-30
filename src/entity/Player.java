@@ -127,4 +127,14 @@ public class Player extends Entity {
 
     } // display()
 
+    public int getKey() {
+
+        int ans = 0;
+        for(Item item : this.inventory) {
+            if(item.name.equals("Key")) ans++;
+        } // for each
+        return ans;
+
+    } // getKey()
+
 } // Player

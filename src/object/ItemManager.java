@@ -25,6 +25,12 @@ public class ItemManager {
         gamePanel.obj[4] = new Chest();
         this.setItemDefaultValue(4, 9, 28);
 
+        gamePanel.obj[5] = new Key();
+        this.setItemDefaultValue(5, 10, 14);
+
+        gamePanel.obj[6] = new Key();
+        this.setItemDefaultValue(6, 11, 14);
+
     } // getObjectImage()
 
     public void setItemDefaultValue(final int index, final int worldX, final int worldY) {
@@ -44,6 +50,7 @@ public class ItemManager {
                     this.gamePanel.player.inventory.add(object);
                     this.gamePanel.obj[objIndex] = null;
                     this.gamePanel.playSoundEffects(4);
+                    this.gamePanel.GUI.displayMessage("+1 key");
                     break;
                 case "House":
                     break;
@@ -59,10 +66,14 @@ public class ItemManager {
                     if(!((Chest) object).isOpen()) {
                         if(keyCount > 0) {
                             ((Chest) object).switchToOpenChest();
+                            this.gamePanel.GUI.displayMessage("Chest opened !");
                             this.gamePanel.player.inventory.remove(index);
                             this.gamePanel.playSoundEffects(6);
                             keyCount--;
                         } // if
+                        else {
+                            this.gamePanel.GUI.displayMessage("need a key...");
+                        }
 
                     }
                     break;

@@ -27,6 +27,7 @@ public class GamePanel extends JPanel implements Runnable {
     public TileManager tileManager = new TileManager(this);
     public CollisionManager collisionManager = new CollisionManager(this);
     public Sound sound = new Sound();
+    public UserInterface GUI = new UserInterface(this);
 
 
     //ENTITY AND OBJECTS
@@ -108,7 +109,7 @@ public class GamePanel extends JPanel implements Runnable {
 
         Graphics2D g2 = (Graphics2D) g;
 
-        tileManager.display(g2);
+        this.tileManager.display(g2);
 
         for(Item obj : this.obj) {
             if(obj != null) {
@@ -116,7 +117,8 @@ public class GamePanel extends JPanel implements Runnable {
             } // if
         } // for each
 
-        player.display(g2);
+        this.player.display(g2);
+        this.GUI.display(g2);
 
         g2.dispose();
 

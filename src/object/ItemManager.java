@@ -43,6 +43,7 @@ public class ItemManager {
                 case "Key":
                     this.gamePanel.player.inventory.add(object);
                     this.gamePanel.obj[objIndex] = null;
+                    this.gamePanel.playSoundEffects(4);
                     break;
                 case "House":
                     break;
@@ -55,11 +56,15 @@ public class ItemManager {
                             index = i;
                         } // if
                     } // for
-                    if(keyCount > 0) {
-                        ((Chest) object).switchToOpenChest();
-                        this.gamePanel.player.inventory.remove(index);
-                        keyCount--;
-                    } // if
+                    if(!((Chest) object).isOpen()) {
+                        if(keyCount > 0) {
+                            ((Chest) object).switchToOpenChest();
+                            this.gamePanel.player.inventory.remove(index);
+                            this.gamePanel.playSoundEffects(6);
+                            keyCount--;
+                        } // if
+
+                    }
                     break;
             } // switch
         } // if "e" pressed

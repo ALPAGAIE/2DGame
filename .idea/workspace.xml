@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="interacting objects and better tiles and objects setting up">
+    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="better coding in the item interacting management and refactoring of some classes">
+      <change afterPath="$PROJECT_DIR$/res/sounds/Select_001.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/chest.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/house.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/keyTaken.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/lilSound.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/mainTheme.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/tuto.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/CollisionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CollisionManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/ObjChest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Chest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/ObjHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/ObjKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Key.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/ObjectManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ItemManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/Chest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/object/ItemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ItemManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,32 +57,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/objects&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/src/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/sounds",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/macprodelucas/Desktop/IntelliJ/!projects/2DGame/res/src/Main.java",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/sounds" />
       <recent name="$PROJECT_DIR$/res/objects" />
       <recent name="$PROJECT_DIR$/res/tiles" />
       <recent name="$PROJECT_DIR$/res/maps" />
       <recent name="$PROJECT_DIR$/res/player" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/res/sounds" />
       <recent name="$PROJECT_DIR$/res/tiles" />
       <recent name="$PROJECT_DIR$/res/maps" />
     </key>
@@ -87,8 +92,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -116,7 +121,27 @@
       <workItem from="1718055237586" duration="2021000" />
       <workItem from="1718094894560" duration="9525000" />
       <workItem from="1718119388883" duration="512000" />
-      <workItem from="1718126496675" duration="1102000" />
+      <workItem from="1718126496675" duration="1283000" />
+      <workItem from="1718173848487" duration="460000" />
+      <workItem from="1718267881071" duration="3000" />
+      <workItem from="1718287284329" duration="493000" />
+      <workItem from="1718304115170" duration="21000" />
+      <workItem from="1718304170863" duration="16000" />
+      <workItem from="1718304338650" duration="33000" />
+      <workItem from="1718304555276" duration="8000" />
+      <workItem from="1718306545014" duration="29000" />
+      <workItem from="1718306624299" duration="20000" />
+      <workItem from="1718306748864" duration="20000" />
+      <workItem from="1718307810736" duration="38000" />
+      <workItem from="1718307946226" duration="7000" />
+      <workItem from="1718308248321" duration="39000" />
+      <workItem from="1718308387899" duration="19000" />
+      <workItem from="1718308471927" duration="57000" />
+      <workItem from="1718308544849" duration="15000" />
+      <workItem from="1718308780984" duration="69000" />
+      <workItem from="1718719724820" duration="104000" />
+      <workItem from="1719060147702" duration="132000" />
+      <workItem from="1719752993017" duration="3009000" />
     </task>
     <task id="LOCAL-00001" summary="Screen settings.">
       <option name="closed" value="true" />
@@ -206,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718111104857</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="better coding in the item interacting management and refactoring of some classes">
+      <option name="closed" value="true" />
+      <created>1718127730404</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718127730404</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +267,8 @@
     <MESSAGE value="collision management" />
     <MESSAGE value="Setting objects on the map" />
     <MESSAGE value="interacting objects and better tiles and objects setting up" />
-    <option name="LAST_COMMIT_MESSAGE" value="interacting objects and better tiles and objects setting up" />
+    <MESSAGE value="better coding in the item interacting management and refactoring of some classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="better coding in the item interacting management and refactoring of some classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

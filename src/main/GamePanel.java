@@ -21,11 +21,16 @@ public class GamePanel extends JPanel implements Runnable {
     public final int screenWidth = maxScreenColumn * tileSize;
     public final int screenHeight = maxScreenRow * tileSize;
 
+    //SYSTEM
     public KeyHandler keyHandler = new KeyHandler();
     Thread clock; // "clock"
-    public Player player = new Player(this, this.keyHandler);
     public TileManager tileManager = new TileManager(this);
     public CollisionManager collisionManager = new CollisionManager(this);
+    public Sound sound = new Sound();
+
+
+    //ENTITY AND OBJECTS
+    public Player player = new Player(this, this.keyHandler);
     public ItemManager itemManager = new ItemManager(this);
     public Item[] obj = new Item[10];
 
@@ -56,7 +61,10 @@ public class GamePanel extends JPanel implements Runnable {
     } // startGameClock()
 
     public void setupObjects() {
+
         this.itemManager.getObjectImage();
+        this.playMusic(2);
+
     } // setupObjects()
 
     @Override
@@ -113,5 +121,26 @@ public class GamePanel extends JPanel implements Runnable {
         g2.dispose();
 
     } // paintComponent()
+
+    public void playMusic(final int i) {
+
+        sound.setClip(i);
+        sound.play();
+        sound.loop();
+
+    } // playMusic(.)
+
+    public void stopMusic() {
+
+        sound.stop();
+
+    } // stopMusic()
+
+    public void playSoundEffects(final int i) {
+
+        sound.setClip(i);
+        sound.play();
+
+    } // playSoundEffects(.)
 
 } // main.GamePanel

@@ -93,7 +93,6 @@ public class Player extends Entity {
             } // if 1st
         } // if move
 
-        // if there's a collision
         if(this.gamePanel.keyHandler.ePressed) {
             int obj = this.gamePanel.collisionManager.checkObject(this, true);
             if(this.collisionOn) {

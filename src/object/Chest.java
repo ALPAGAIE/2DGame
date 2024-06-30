@@ -6,6 +6,7 @@ import java.io.IOException;
 public class Chest extends Item {
 
     private boolean isOpen = false;
+
     public Chest() {
 
         this.name = "Chest";
@@ -36,5 +37,11 @@ public class Chest extends Item {
 
         this.isOpen = true;
     } // switchToOpenChest()
+
+    public boolean isOpen() {
+
+        return this.isOpen;
+
+    } // isOpen()
 
 } // ObjChest

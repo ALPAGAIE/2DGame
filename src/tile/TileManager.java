@@ -16,24 +16,51 @@ public class TileManager {
 
     public TileManager(final GamePanel gamePanel) {
         this.gamePanel = gamePanel;
-        this.tile = new Tile[20];
+        this.tile = new Tile[36];
         this.mapTimeNum = new int[gamePanel.maxWorldColumn][gamePanel.maxWorldRow];
 
         this.getTileImage();
-        this.loadMap("/maps/bigMap");
+        this.loadMap("/maps/map");
     } // TileManager(.)
 
     public void getTileImage() {
 
-        this.setTile(0, "wall_hor_up", true);
-        this.setTile(1, "wall_hor_down", true);
-        this.setTile(2, "wall_vert_right", true);
-        this.setTile(3, "path", false);
-        this.setTile(4, "grass", false);
-        this.setTile(5, "water", true);
-        this.setTile(6, "tree", true);
-        this.setTile(7, "wall_vert_left", true);
-
+        this.setTile(0, "paths/end-top", false); //
+        this.setTile(1, "waters/vert-left", true); //
+        this.setTile(2, "waters/vert-right", true); //
+        this.setTile(3, "walls/incorner-left", true); //
+        this.setTile(4, "walls/corner-bot-right", true); //
+        this.setTile(5, "walls/hor_down", true); //
+        this.setTile(6, "walls/vert_right", true); //
+        this.setTile(7, "waters/corner-top-right", true); //
+        this.setTile(8, "waters/paddle", true); //
+        this.setTile(9, "waters/cornerin-bot-left", true); //
+        this.setTile(10, "waters/cornerin-top-right", true); //
+        this.setTile(11, "paths/bot-right", false); //
+        this.setTile(12, "paths/bot-left", false); //
+        this.setTile(13, "walls/corner-bot-left", true); //
+        this.setTile(14, "walls/vert_left", true); //
+        this.setTile(15, "paths/vert", false); //
+        this.setTile(16, "walls/corner-top-left", true); //
+        this.setTile(17, "grass", false); //
+        this.setTile(18, "paths/top-left", false); //
+        this.setTile(19, "paths/end-bot", false); //
+        this.setTile(20, "waters/corner-bot-right", true); //
+        this.setTile(21, "walls/corner-top-right", true); //
+        this.setTile(22, "paths/cross", false); //
+        this.setTile(23, "waters/hor-down", true); //
+        this.setTile(24, "waters/water", true); //
+        this.setTile(25, "tree", true); //
+        this.setTile(26, "walls/hor_up", true); //
+        this.setTile(27, "paths/end-left", false); //
+        this.setTile(28, "paths/end-right", false); //
+        this.setTile(29, "paths/top-right", false); //
+        this.setTile(30, "paths/t", false); //
+        this.setTile(31, "walls/stairs", false); //
+        this.setTile(32, "waters/corner-bot-left", true); //
+        this.setTile(33, "walls/incorner-right", true); //
+        this.setTile(34, "paths/hor", false); //
+        this.setTile(35, "waters/corner-top-left", true); //
     } // getTileImage()
 
     public void setTile(final int index, final String name, final boolean collision) {

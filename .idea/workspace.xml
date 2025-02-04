@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="Add real map with more different tiles, more UI, interaction with House and an end screen that need adjustment.">
-      <change afterPath="$PROJECT_DIR$/res/sounds/background.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sounds/key.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/sounds/win.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UserInterface.java" afterDir="false" />
-    </list>
+    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="Fixing the ending screen and changing some sounds." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +140,7 @@
       <workItem from="1738668850338" duration="245000" />
       <workItem from="1738670068349" duration="211000" />
       <workItem from="1738676168679" duration="1169000" />
-      <workItem from="1738683333702" duration="633000" />
+      <workItem from="1738683333702" duration="945000" />
     </task>
     <task id="LOCAL-00001" summary="Screen settings.">
       <option name="closed" value="true" />
@@ -271,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738626103152</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Fixing the ending screen and changing some sounds.">
+      <option name="closed" value="true" />
+      <created>1738684643184</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738684643184</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +302,8 @@
     <MESSAGE value="adding music and soundEffects !" />
     <MESSAGE value="some UI implemented" />
     <MESSAGE value="Add real map with more different tiles, more UI, interaction with House and an end screen that need adjustment." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add real map with more different tiles, more UI, interaction with House and an end screen that need adjustment." />
+    <MESSAGE value="Fixing the ending screen and changing some sounds." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixing the ending screen and changing some sounds." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

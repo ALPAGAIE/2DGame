@@ -21,7 +21,7 @@ public class UserInterface {
     public UserInterface(final GamePanel gamePanel) {
 
         this.gamePanel = gamePanel;
-        this.font = new Font("Calibri", Font.BOLD, 40);
+        this.font = new Font("Helvetica", Font.BOLD, 40);
         Key key = new Key();
         this.keyImage = key.image;
         try {
@@ -42,7 +42,7 @@ public class UserInterface {
 
         g2.setFont(this.font);
         g2.drawImage(this.keyImage, (this.gamePanel.tileSize)/2, (this.gamePanel.tileSize)/2, this.gamePanel.tileSize, this.gamePanel.tileSize, null);
-        g2.setColor(Color.BLACK);
+        g2.setColor(Color.WHITE);
         g2.drawString(": " + this.gamePanel.player.getKey(), 95, 75);
 
         if(this.messageDisplay) {
@@ -68,11 +68,11 @@ public class UserInterface {
 
     public void displayVictory(final Graphics2D g2) {
         g2.setFont(this.font);
-        g2.drawImage(this.winImage, 0, 0, this.gamePanel.tileSize*50, this.gamePanel.tileSize*50, null);
-        g2.setColor(Color.BLACK);
+        g2.drawImage(this.winImage, 0, 0, this.gamePanel.screenWidth, this.gamePanel.screenHeight, null);
+        g2.setColor(Color.WHITE);
 
-        g2.setFont(g2.getFont().deriveFont(25F));
-        g2.drawString("CONGRATULATIONS, YOU WIN !!!", this.gamePanel.screenWidth/2 - this.gamePanel.tileSize/2, this.gamePanel.screenHeight/6);
+        g2.setFont(g2.getFont().deriveFont(40F));
+        g2.drawString("CONGRATULATIONS, YOU WIN !!!", this.gamePanel.screenWidth/5, this.gamePanel.screenHeight/4);
 
     } // display(.)
 } // UserInterface

@@ -4,26 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="some UI implemented">
-      <change afterPath="$PROJECT_DIR$/res/maps/map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/tiles/walls/stairs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/winImg.jpg" afterDir="false" />
+    <list default="true" id="4c3e8833-badc-488e-ab94-38387e32df2f" name="Changes" comment="Add real map with more different tiles, more UI, interaction with House and an end screen that need adjustment.">
+      <change afterPath="$PROJECT_DIR$/res/sounds/background.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/key.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/sounds/win.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/maps/map1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/maps/map2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/grass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/path.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/tree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/wall_hor_down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/wall_hor_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/wall_vert_left.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/wall_vert_right.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/tiles/water.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Sound.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Sound.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/UserInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UserInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/object/ItemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/object/ItemManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tile/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,10 +79,10 @@
       <recent name="$PROJECT_DIR$/res/player" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/res" />
-      <recent name="$PROJECT_DIR$/res/maps" />
-      <recent name="$PROJECT_DIR$/res/tiles/walls" />
       <recent name="$PROJECT_DIR$/res/sounds" />
+      <recent name="$PROJECT_DIR$/res/maps" />
+      <recent name="$PROJECT_DIR$/res" />
+      <recent name="$PROJECT_DIR$/res/tiles/walls" />
       <recent name="$PROJECT_DIR$/res/tiles" />
     </key>
   </component>
@@ -156,7 +145,11 @@
       <workItem from="1738509566500" duration="645000" />
       <workItem from="1738520760645" duration="321000" />
       <workItem from="1738529420853" duration="8232000" />
-      <workItem from="1738613042598" duration="6882000" />
+      <workItem from="1738613042598" duration="7227000" />
+      <workItem from="1738668850338" duration="245000" />
+      <workItem from="1738670068349" duration="211000" />
+      <workItem from="1738676168679" duration="1169000" />
+      <workItem from="1738683333702" duration="633000" />
     </task>
     <task id="LOCAL-00001" summary="Screen settings.">
       <option name="closed" value="true" />
@@ -270,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719763526666</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add real map with more different tiles, more UI, interaction with House and an end screen that need adjustment.">
+      <option name="closed" value="true" />
+      <created>1738626103152</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1738626103152</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,7 +302,8 @@
     <MESSAGE value="better coding in the item interacting management and refactoring of some classes" />
     <MESSAGE value="adding music and soundEffects !" />
     <MESSAGE value="some UI implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="some UI implemented" />
+    <MESSAGE value="Add real map with more different tiles, more UI, interaction with House and an end screen that need adjustment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add real map with more different tiles, more UI, interaction with House and an end screen that need adjustment." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

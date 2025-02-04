@@ -12,11 +12,12 @@ public class Sound {
 
         this.soundURL[0] = getClass().getResource("/sounds/house.wav");
         this.soundURL[1] = getClass().getResource("/sounds/tuto.wav");
-        this.soundURL[2] = getClass().getResource("/sounds/mainTheme.wav");
+        this.soundURL[2] = getClass().getResource("/sounds/background.wav");
         this.soundURL[3] = getClass().getResource("/sounds/chest.wav");
-        this.soundURL[4] = getClass().getResource("/sounds/keyTaken.wav");
+        this.soundURL[4] = getClass().getResource("/sounds/key.wav");
         this.soundURL[5] = getClass().getResource("/sounds/Select_001.wav");
         this.soundURL[6] = getClass().getResource("/sounds/lilSound.wav");
+        this.soundURL[7] = getClass().getResource("/sounds/win.wav");
 
     } // Sound()
 

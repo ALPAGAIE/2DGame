@@ -123,6 +123,8 @@ public class GamePanel extends JPanel implements Runnable {
         if(this.GUI.hasWon()) {
             this.GUI.displayVictory(g2);
             this.clock = null;
+            this.stopMusic();
+            this.playMusic(7);
         }
 
         g2.dispose();
